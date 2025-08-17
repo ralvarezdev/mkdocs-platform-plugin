@@ -10,6 +10,8 @@ class PlatformContentPlugin(BasePlugin):
         # Uncomment MkDocs-only content
         pattern_mkdocs = r'<!-- mkdocs-only-start\n(.*?)\nmkdocs-only-end -->'
         markdown = re.sub(pattern_mkdocs, r'\1', markdown, flags=re.DOTALL)
+	pattern_mkdocs = r'<!-- mkdocs-only-start (.*?) mkdocs-only-end -->'
+        markdown = re.sub(pattern_mkdocs, r'\1', markdown, flags=re.DOTALL)
 
         # Clean up excessive newlines
         markdown = re.sub(r'\n{3,}', '\n\n', markdown)
