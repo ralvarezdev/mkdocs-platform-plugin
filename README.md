@@ -52,4 +52,4 @@ The publish workflow checks that the `pyproject.toml` version matches the `v*` t
 
 ## License
 
-The repository has a GNU General Public License v3.0 `LICENSE` file, but `pyproject.toml` declares `MIT`; the two disagree.
+GNU General Public License v3.0. `pyproject.toml` declares `GPL-3.0-only`, matching the `LICENSE` file.
